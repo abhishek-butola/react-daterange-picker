@@ -20,7 +20,8 @@ const useStyles = makeStyles(theme => ({
   buttonText: {
     lineHeight: 1.6
   },
-  outlined: {// border: `1px solid ${theme.palette.primary.dark}`,
+  outlined: {
+    border: `1px solid ${theme.palette.primary.dark}`
   },
   filled: {
     '&:hover': {

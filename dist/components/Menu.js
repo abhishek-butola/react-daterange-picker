@@ -49,8 +49,6 @@ const Menu = props => {
     handlers
   };
   return /*#__PURE__*/_jsx(Paper, {
-    elevation: 5,
-    square: true,
     children: /*#__PURE__*/_jsxs(Grid, {
       container: true,
       direction: "row",

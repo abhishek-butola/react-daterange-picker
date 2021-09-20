@@ -54,7 +54,7 @@ const Menu = (props) => {
     handlers
   };
   return (
-    <Paper elevation={0}>
+    <Paper>
       <Grid container direction="row" wrap="nowrap">
         <Grid>
           <Grid container className={classes.header} alignItems="center">
