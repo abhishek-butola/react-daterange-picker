@@ -49,6 +49,10 @@ const Menu = props => {
     handlers
   };
   return /*#__PURE__*/_jsx(Paper, {
+    style: {
+      boxShadow: 'none',
+      border: 'none'
+    },
     children: /*#__PURE__*/_jsxs(Grid, {
       container: true,
       direction: "row",
