@@ -42,10 +42,7 @@ const DateRangePickerWrapper = (props) => {
   const wrapperClasses = classNames(classes.dateRangePicker, wrapperClassName);
 
   return (
-    <div
-      className={classes.dateRangePickerContainer}
-      style={{ boxShadow: 'none' }}
-    >
+    <div className={classes.dateRangePickerContainer}>
       {open && (
         <div
           className={classes.dateRangeBackdrop}
