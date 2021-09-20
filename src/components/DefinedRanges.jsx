@@ -1,6 +1,6 @@
 import React from 'react';
 import { isSameDay } from 'date-fns';
-import { List, ListItem, ListItemText } from '@material-ui/core';
+import { List, ListItem, ListItemText, Button } from '@material-ui/core';
 
 const isSameRange = (first, second) => {
   const { startDate: fStart, endDate: fEnd } = first;
@@ -11,7 +11,7 @@ const isSameRange = (first, second) => {
   return false;
 };
 
-const DefinedRanges = ({ ranges, setRange, selectedRange }) => (
+const DefinedRanges = ({ ranges, setRange, selectedRange, closeModal }) => (
   <List>
     {ranges.map((range, idx) => (
       // eslint-disable-next-line react/no-array-index-key
@@ -30,7 +30,7 @@ const DefinedRanges = ({ ranges, setRange, selectedRange }) => (
     ))}
 
     <ListItem>
-      <Button variant="contained" color="primary">
+      <Button onClick={closeModal} variant="contained" color="primary">
         OK
       </Button>
     </ListItem>
