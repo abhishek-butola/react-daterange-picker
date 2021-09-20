@@ -124,7 +124,8 @@ const DateRangePicker = props => {
     setSecondMonth: setSecondMonthValidated,
     setDateRange: setDateRangeValidated,
     helpers: helpers,
-    handlers: handlers
+    handlers: handlers,
+    closeModal: props.closeModal
   }) : null;
 };
 

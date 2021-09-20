@@ -108,7 +108,8 @@ const Menu = props => {
         children: /*#__PURE__*/_jsx(DefinedRanges, {
           selectedRange: dateRange,
           ranges: ranges,
-          setRange: setDateRange
+          setRange: setDateRange,
+          closeModal: props.closeModal
         })
       })]
     })

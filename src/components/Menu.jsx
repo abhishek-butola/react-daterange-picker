@@ -97,6 +97,7 @@ const Menu = (props) => {
             selectedRange={dateRange}
             ranges={ranges}
             setRange={setDateRange}
+            closeModal={props.closeModal}
           />
         </Grid>
       </Grid>
