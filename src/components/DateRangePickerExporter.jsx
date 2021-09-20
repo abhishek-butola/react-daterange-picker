@@ -4,11 +4,9 @@ import DateRangePickerWrapper from './DateRangePickerWrapper';
 import generateClassName from '../generateClassName';
 
 const DateRangePickerExporter = (props) => (
-    <StylesProvider generateClassName={generateClassName}>
-        <DateRangePickerWrapper
-            {...props}
-        />
-    </StylesProvider>
+  <StylesProvider generateClassName={generateClassName}>
+    <DateRangePickerWrapper {...props} />
+  </StylesProvider>
 );
 
 export default DateRangePickerExporter;

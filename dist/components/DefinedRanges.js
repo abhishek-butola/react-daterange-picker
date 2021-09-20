@@ -2,6 +2,7 @@ import React from 'react';
 import { isSameDay } from 'date-fns';
 import { List, ListItem, ListItemText } from '@material-ui/core';
 import { jsx as _jsx } from "react/jsx-runtime";
+import { jsxs as _jsxs } from "react/jsx-runtime";
 
 const isSameRange = (first, second) => {
   const {
@@ -24,8 +25,8 @@ const DefinedRanges = ({
   ranges,
   setRange,
   selectedRange
-}) => /*#__PURE__*/_jsx(List, {
-  children: ranges.map((range, idx) =>
+}) => /*#__PURE__*/_jsxs(List, {
+  children: [ranges.map((range, idx) =>
   /*#__PURE__*/
   // eslint-disable-next-line react/no-array-index-key
   _jsx(ListItem, {
@@ -40,7 +41,13 @@ const DefinedRanges = ({
       },
       children: range.label
     })
-  }, idx))
+  }, idx)), /*#__PURE__*/_jsx(ListItem, {
+    children: /*#__PURE__*/_jsx(Button, {
+      variant: "contained",
+      color: "primary",
+      children: "OK"
+    })
+  })]
 });
 
 export default DefinedRanges;

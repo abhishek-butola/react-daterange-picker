@@ -54,7 +54,7 @@ const Menu = (props) => {
     handlers
   };
   return (
-    <Paper style={{ boxShadow: 'none', border: 'none' }}>
+    <Paper elevation={1} style={{ border: 'none' }}>
       <Grid container direction="row" wrap="nowrap">
         <Grid>
           <Grid container className={classes.header} alignItems="center">
