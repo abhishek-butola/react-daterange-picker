@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
-    "pub": "npm version patch && npm run build && npm publish"
+    "pub": "npm version patch && npm run build && npm publish",
+    "push": "npm run build && git add . && git commit -m \"updates\" && git push -u origin master"
   },
   "repository": {
     "type": "git",
