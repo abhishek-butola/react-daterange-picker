@@ -5,10 +5,10 @@ import DateRangePicker from './DateRangePicker';
 
 const useStyles = makeStyles(() => ({
   dateRangePickerContainer: {
-    position: 'relative'
+    // position: 'relative'
   },
   dateRangePicker: {
-    position: 'relative',
+    // position: 'relative',
     zIndex: 1
   },
   dateRangeBackdrop: {

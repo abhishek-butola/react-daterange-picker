@@ -12,7 +12,8 @@ const NavigationAction = {
   Next: 1
 };
 const useStyles = makeStyles(() => ({
-  root: {// width: 290,
+  root: {
+    width: 290
   },
   weekDaysContainer: {
     marginTop: 10,
