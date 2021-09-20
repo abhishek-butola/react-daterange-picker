@@ -77,7 +77,7 @@ const Header = ({
         <Select
           value={getMonth(date)}
           onChange={handleMonthChange}
-          MenuProps={{ disablePortal: true }}
+          // MenuProps={{ disablePortal: true }}
         >
           {MONTHS.map((month, idx) => (
             <MenuItem key={month} value={idx}>
@@ -91,9 +91,9 @@ const Header = ({
         <Select
           value={getYear(date)}
           onChange={handleYearChange}
-          MenuProps={{ disablePortal: true }}
+          //  MenuProps={{ disablePortal: true }}
         >
-          {generateYears(date, 3).map((year) => (
+          {generateYears(date, 5).map((year) => (
             <MenuItem key={year} value={year}>
               {year}
             </MenuItem>

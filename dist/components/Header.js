@@ -60,10 +60,8 @@ const Header = ({
       item: true,
       children: /*#__PURE__*/_jsx(Select, {
         value: getMonth(date),
-        onChange: handleMonthChange,
-        MenuProps: {
-          disablePortal: true
-        },
+        onChange: handleMonthChange // MenuProps={{ disablePortal: true }}
+        ,
         children: MONTHS.map((month, idx) => /*#__PURE__*/_jsx(MenuItem, {
           value: idx,
           children: month
@@ -73,11 +71,9 @@ const Header = ({
       item: true,
       children: /*#__PURE__*/_jsx(Select, {
         value: getYear(date),
-        onChange: handleYearChange,
-        MenuProps: {
-          disablePortal: true
-        },
-        children: generateYears(date, 3).map(year => /*#__PURE__*/_jsx(MenuItem, {
+        onChange: handleYearChange //  MenuProps={{ disablePortal: true }}
+        ,
+        children: generateYears(date, 5).map(year => /*#__PURE__*/_jsx(MenuItem, {
           value: year,
           children: year
         }, year))
