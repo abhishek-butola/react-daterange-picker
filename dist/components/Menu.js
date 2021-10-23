@@ -49,7 +49,7 @@ const Menu = props => {
     handlers
   };
   return /*#__PURE__*/_jsx(Paper, {
-    elevation: 1,
+    elevation: 0,
     style: {
       border: 'none'
     },

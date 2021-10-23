@@ -15,7 +15,10 @@ const DefinedRanges = ({ ranges, setRange, selectedRange, closeModal }) => (
   <List>
     {ranges.map((range, idx) => (
       // eslint-disable-next-line react/no-array-index-key
-      <ListItem button key={idx} onClick={() => setRange(range)}>
+      <ListItem button key={idx} onClick={() => {
+        setRange(range)
+         closeModal()
+      }}>
         <ListItemText
           primaryTypographyProps={{
             variant: 'body2',
@@ -29,11 +32,11 @@ const DefinedRanges = ({ ranges, setRange, selectedRange, closeModal }) => (
       </ListItem>
     ))}
 
-    <ListItem>
+    {/* <ListItem>
       <Button onClick={closeModal} variant="contained" color="primary">
         OK
       </Button>
-    </ListItem>
+    </ListItem> */}
   </List>
 );
 
