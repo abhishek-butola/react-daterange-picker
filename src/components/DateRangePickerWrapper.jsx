@@ -21,6 +21,8 @@ const useStyles = makeStyles(() => ({
     // right: 0,
     // left: 0,
     // top: 0,
+    width:"100%",
+    maxWidth:"100%"
   }
 }));
 

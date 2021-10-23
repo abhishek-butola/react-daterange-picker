@@ -12,7 +12,8 @@ const useStyles = makeStyles(() => ({
     position: 'relative',
     zIndex: 1
   },
-  dateRangeBackdrop: {//yes
+  dateRangeBackdrop: {
+    //yes
     // position: 'fixed',
     // height: '100vh',
     // width: '100vw',
@@ -21,6 +22,8 @@ const useStyles = makeStyles(() => ({
     // right: 0,
     // left: 0,
     // top: 0,
+    width: "100%",
+    maxWidth: "100%"
   }
 }));
 
