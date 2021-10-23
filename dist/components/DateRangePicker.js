@@ -74,6 +74,7 @@ const DateRangePicker = props => {
       };
       onChange(newRange);
       setDateRange(newRange);
+      props.closeModal();
     } else {
       setDateRange({
         startDate: day,
