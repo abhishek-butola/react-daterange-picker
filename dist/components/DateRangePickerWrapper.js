@@ -5,15 +5,13 @@ import DateRangePicker from './DateRangePicker';
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
 const useStyles = makeStyles(() => ({
-  dateRangePickerContainer: {
-    position: 'relative'
+  dateRangePickerContainer: {// position: 'relative'
   },
   dateRangePicker: {
-    position: 'relative',
+    // position: 'relative',
     zIndex: 1
   },
-  dateRangeBackdrop: {
-    //yes
+  dateRangeBackdrop: {//yes
     // position: 'fixed',
     // height: '100vh',
     // width: '100vw',
@@ -22,8 +20,8 @@ const useStyles = makeStyles(() => ({
     // right: 0,
     // left: 0,
     // top: 0,
-    width: "100%",
-    maxWidth: "100%"
+    // width:"100%",
+    // maxWidth:"100%"
   }
 }));
 
