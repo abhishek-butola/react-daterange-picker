@@ -26,7 +26,8 @@ const useStyles = makeStyles(theme => ({
   },
   filled: {
     '&:hover': {
-      backgroundColor: theme.palette.primary.dark
+      // backgroundColor: theme.palette.primary.dark
+      backgroundColor: '#805AD5'
     },
     // backgroundColor: theme.palette.primary.dark
     backgroundColor: '#805AD5'

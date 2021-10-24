@@ -58,7 +58,7 @@ const Menu = (props) => {
       <Grid container direction="row" wrap="nowrap">
         <Grid>
           <Grid container className={classes.header} alignItems="center">
-            <Grid item className={classes.headerItem}>
+            <Grid item sm="12" md="12" className={classes.headerItem}>
               <Typography variant="subtitle1">
                 {startDate ? format(startDate, 'MMMM DD, YYYY') : 'Start Date'}
               </Typography>
@@ -66,7 +66,7 @@ const Menu = (props) => {
             <Grid item className={classes.headerItem}>
               <ArrowRightAlt color="action" />
             </Grid>
-            <Grid item className={classes.headerItem}>
+            <Grid item sm="12" md="12" className={classes.headerItem}>
               <Typography variant="subtitle1">
                 {endDate ? format(endDate, 'MMMM DD, YYYY') : 'End Date'}
               </Typography>
