@@ -59,7 +59,8 @@ const Menu = props => {
       wrap: "nowrap",
       children: [/*#__PURE__*/_jsxs(Grid, {
         item: true,
-        xs: 6,
+        md: 6,
+        sm: 6,
         children: [/*#__PURE__*/_jsxs(Grid, {
           container: true,
           className: classes.header,

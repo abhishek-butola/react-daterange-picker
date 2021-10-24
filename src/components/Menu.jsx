@@ -56,7 +56,7 @@ const Menu = (props) => {
   return (
     <Paper elevation={0} style={{ border: 'none' }}>
       <Grid container direction="row" wrap="nowrap">
-        <Grid item xs={6}>
+        <Grid item md={6} sm={6}>
           <Grid container className={classes.header} alignItems="center">
             <Grid item sm={12 }md={12} className={classes.headerItem}>
               <Typography variant="subtitle1">
