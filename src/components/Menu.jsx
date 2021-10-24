@@ -55,7 +55,7 @@ const Menu = (props) => {
   };
   return (
     <Paper elevation={0} style={{ border: 'none' }}>
-      <Grid container direction="row" wrap="nowrap">
+      <Grid container direction="row" wrap="wrap">
         <Grid>
           <Grid container className={classes.header} alignItems="center">
             <Grid item className={classes.headerItem}>

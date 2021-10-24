@@ -56,7 +56,7 @@ const Menu = props => {
     children: /*#__PURE__*/_jsxs(Grid, {
       container: true,
       direction: "row",
-      wrap: "nowrap",
+      wrap: "wrap",
       children: [/*#__PURE__*/_jsxs(Grid, {
         children: [/*#__PURE__*/_jsxs(Grid, {
           container: true,
