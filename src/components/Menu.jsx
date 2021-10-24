@@ -56,9 +56,9 @@ const Menu = (props) => {
   return (
     <Paper elevation={0} style={{ border: 'none' }}>
       <Grid container direction="row" wrap="nowrap">
-        <Grid item md={6} sm={6}>
+        <Grid>
           <Grid container className={classes.header} alignItems="center">
-            <Grid item sm={12 }md={12} className={classes.headerItem}>
+            <Grid item className={classes.headerItem}>
               <Typography variant="subtitle1">
                 {startDate ? format(startDate, 'MMMM DD, YYYY') : 'Start Date'}
               </Typography>
@@ -66,7 +66,7 @@ const Menu = (props) => {
             <Grid item className={classes.headerItem}>
               <ArrowRightAlt color="action" />
             </Grid>
-            <Grid item sm={12} sm={12} className={classes.headerItem}>
+            <Grid item className={classes.headerItem}>
               <Typography variant="subtitle1">
                 {endDate ? format(endDate, 'MMMM DD, YYYY') : 'End Date'}
               </Typography>
@@ -74,6 +74,7 @@ const Menu = (props) => {
           </Grid>
           <Divider />
           <Grid container direction="row" justify="center" wrap="nowrap">
+            <Grid item md={12} sm={12}>
             <Month
               {...commonProps}
               value={firstMonth}
@@ -81,7 +82,9 @@ const Menu = (props) => {
               navState={[true, canNavigateCloser]}
               marker={MARKERS.FIRST_MONTH}
             />
+            </Grid>
             <div className={classes.divider} />
+            <Grid item md={12} sm={12}>
             <Month
               {...commonProps}
               value={secondMonth}
@@ -89,6 +92,7 @@ const Menu = (props) => {
               navState={[canNavigateCloser, true]}
               marker={MARKERS.SECOND_MONTH}
             />
+            </Grid>
           </Grid>
         </Grid>
         <div className={classes.divider} />

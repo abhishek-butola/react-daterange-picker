@@ -58,17 +58,12 @@ const Menu = props => {
       direction: "row",
       wrap: "nowrap",
       children: [/*#__PURE__*/_jsxs(Grid, {
-        item: true,
-        md: 6,
-        sm: 6,
         children: [/*#__PURE__*/_jsxs(Grid, {
           container: true,
           className: classes.header,
           alignItems: "center",
           children: [/*#__PURE__*/_jsx(Grid, {
             item: true,
-            sm: 12,
-            md: 12,
             className: classes.headerItem,
             children: /*#__PURE__*/_jsx(Typography, {
               variant: "subtitle1",
@@ -82,8 +77,6 @@ const Menu = props => {
             })
           }), /*#__PURE__*/_jsx(Grid, {
             item: true,
-            sm: 12,
-            sm: 12,
             className: classes.headerItem,
             children: /*#__PURE__*/_jsx(Typography, {
               variant: "subtitle1",
@@ -95,18 +88,28 @@ const Menu = props => {
           direction: "row",
           justify: "center",
           wrap: "nowrap",
-          children: [/*#__PURE__*/_jsx(Month, { ...commonProps,
-            value: firstMonth,
-            setValue: setFirstMonth,
-            navState: [true, canNavigateCloser],
-            marker: MARKERS.FIRST_MONTH
+          children: [/*#__PURE__*/_jsx(Grid, {
+            item: true,
+            md: 12,
+            sm: 12,
+            children: /*#__PURE__*/_jsx(Month, { ...commonProps,
+              value: firstMonth,
+              setValue: setFirstMonth,
+              navState: [true, canNavigateCloser],
+              marker: MARKERS.FIRST_MONTH
+            })
           }), /*#__PURE__*/_jsx("div", {
             className: classes.divider
-          }), /*#__PURE__*/_jsx(Month, { ...commonProps,
-            value: secondMonth,
-            setValue: setSecondMonth,
-            navState: [canNavigateCloser, true],
-            marker: MARKERS.SECOND_MONTH
+          }), /*#__PURE__*/_jsx(Grid, {
+            item: true,
+            md: 12,
+            sm: 12,
+            children: /*#__PURE__*/_jsx(Month, { ...commonProps,
+              value: secondMonth,
+              setValue: setSecondMonth,
+              navState: [canNavigateCloser, true],
+              marker: MARKERS.SECOND_MONTH
+            })
           })]
         })]
       }), /*#__PURE__*/_jsx("div", {
