@@ -105,6 +105,7 @@ const Menu = props => {
       }), /*#__PURE__*/_jsx("div", {
         className: classes.divider
       }), /*#__PURE__*/_jsx(Grid, {
+        justify: "center",
         children: /*#__PURE__*/_jsx(DefinedRanges, {
           selectedRange: dateRange,
           ranges: ranges,
