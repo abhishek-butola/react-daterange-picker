@@ -73,8 +73,7 @@ const Menu = (props) => {
             </Grid>
           </Grid>
           <Divider />
-          <Grid container direction="row" justify="center" wrap="nowrap">
-            <Grid item md={12} sm={12}>
+          <Grid container direction="row" justify="center" wrap="wrap">
             <Month
               {...commonProps}
               value={firstMonth}
@@ -82,9 +81,7 @@ const Menu = (props) => {
               navState={[true, canNavigateCloser]}
               marker={MARKERS.FIRST_MONTH}
             />
-            </Grid>
             <div className={classes.divider} />
-            <Grid item md={12} sm={12}>
             <Month
               {...commonProps}
               value={secondMonth}
@@ -92,7 +89,6 @@ const Menu = (props) => {
               navState={[canNavigateCloser, true]}
               marker={MARKERS.SECOND_MONTH}
             />
-            </Grid>
           </Grid>
         </Grid>
         <div className={classes.divider} />

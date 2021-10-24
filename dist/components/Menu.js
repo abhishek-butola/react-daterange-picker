@@ -87,29 +87,19 @@ const Menu = props => {
           container: true,
           direction: "row",
           justify: "center",
-          wrap: "nowrap",
-          children: [/*#__PURE__*/_jsx(Grid, {
-            item: true,
-            md: 12,
-            sm: 12,
-            children: /*#__PURE__*/_jsx(Month, { ...commonProps,
-              value: firstMonth,
-              setValue: setFirstMonth,
-              navState: [true, canNavigateCloser],
-              marker: MARKERS.FIRST_MONTH
-            })
+          wrap: "wrap",
+          children: [/*#__PURE__*/_jsx(Month, { ...commonProps,
+            value: firstMonth,
+            setValue: setFirstMonth,
+            navState: [true, canNavigateCloser],
+            marker: MARKERS.FIRST_MONTH
           }), /*#__PURE__*/_jsx("div", {
             className: classes.divider
-          }), /*#__PURE__*/_jsx(Grid, {
-            item: true,
-            md: 12,
-            sm: 12,
-            children: /*#__PURE__*/_jsx(Month, { ...commonProps,
-              value: secondMonth,
-              setValue: setSecondMonth,
-              navState: [canNavigateCloser, true],
-              marker: MARKERS.SECOND_MONTH
-            })
+          }), /*#__PURE__*/_jsx(Month, { ...commonProps,
+            value: secondMonth,
+            setValue: setSecondMonth,
+            navState: [canNavigateCloser, true],
+            marker: MARKERS.SECOND_MONTH
           })]
         })]
       }), /*#__PURE__*/_jsx("div", {
