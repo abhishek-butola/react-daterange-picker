@@ -33,7 +33,7 @@ const DefinedRanges = ({ ranges, setRange, selectedRange, closeModal }) => (
     ))}
 
     <ListItem>
-      <Button onClick={closeModal} variant="contained" style={{boxShadow:'none'}} color="primary">
+      <Button onClick={closeModal} variant="contained" style={{boxShadow:'none', backgroundColor:'#805AD5'}} >
         Close
       </Button>
     </ListItem>

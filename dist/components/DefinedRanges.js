@@ -50,9 +50,9 @@ const DefinedRanges = ({
       onClick: closeModal,
       variant: "contained",
       style: {
-        boxShadow: 'none'
+        boxShadow: 'none',
+        backgroundColor: '#805AD5'
       },
-      color: "primary",
       children: "Close"
     })
   })]
