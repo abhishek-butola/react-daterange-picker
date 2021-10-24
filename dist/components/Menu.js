@@ -64,8 +64,8 @@ const Menu = props => {
           alignItems: "center",
           children: [/*#__PURE__*/_jsx(Grid, {
             item: true,
-            sm: "12",
-            md: "12",
+            sm: 12,
+            md: 12,
             className: classes.headerItem,
             children: /*#__PURE__*/_jsx(Typography, {
               variant: "subtitle1",
@@ -79,8 +79,8 @@ const Menu = props => {
             })
           }), /*#__PURE__*/_jsx(Grid, {
             item: true,
-            sm: "12",
-            md: "12",
+            sm: 12,
+            sm: 12,
             className: classes.headerItem,
             children: /*#__PURE__*/_jsx(Typography, {
               variant: "subtitle1",
