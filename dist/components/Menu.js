@@ -105,7 +105,6 @@ const Menu = props => {
       }), /*#__PURE__*/_jsx("div", {
         className: classes.divider
       }), /*#__PURE__*/_jsx(Grid, {
-        container: true,
         direction: "row",
         justify: "center",
         wrap: "wrap",

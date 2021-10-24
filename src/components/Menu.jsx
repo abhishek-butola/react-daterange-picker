@@ -92,7 +92,7 @@ const Menu = (props) => {
           </Grid>
         </Grid>
         <div className={classes.divider} />
-        <Grid  container direction="row" justify="center" wrap="wrap">
+        <Grid   direction="row" justify="center" wrap="wrap">
           <DefinedRanges
             selectedRange={dateRange}
             ranges={ranges}
