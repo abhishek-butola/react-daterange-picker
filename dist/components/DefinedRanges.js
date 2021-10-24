@@ -51,6 +51,7 @@ const DefinedRanges = ({
       variant: "contained",
       style: {
         boxShadow: 'none',
+        color: "#fff",
         backgroundColor: '#805AD5'
       },
       children: "Close"

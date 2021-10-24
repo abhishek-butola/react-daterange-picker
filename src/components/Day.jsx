@@ -21,16 +21,16 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: 1.6
   },
   outlined: {
-    // border: `1px solid ${theme.palette.primary.dark}`
-    border: '1px solid #805AD5'
+    
+    // border: `1px solid ${theme.palette.primary.dark}`,
+    border: `1px solid #805AD5`
   },
   filled: {
     '&:hover': {
-      // backgroundColor: theme.palette.primary.dark
-      backgroundColor: '#805AD5'
+      backgroundColor: theme.palette.primary.dark
     },
     // backgroundColor: theme.palette.primary.dark
-      backgroundClip: '#805AD5'
+      backgroundColor: '#805AD5'
   },
   highlighted: {
     backgroundColor: theme.palette.action.hover
